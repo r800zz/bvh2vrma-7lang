@@ -1,7 +1,7 @@
 # bvh to VRMA - 7 languages
-Modified to support 7 languages
-This repository contains a web application that converts BVH files into VRM animation files.　　
-7言語対応にしました。
+Modified to support 7 languages  
+This repository contains a web application that converts BVH files into VRM animation files.  
+7言語に対応しました。  
 このリポジトリは bvh ファイルを VRMアニメーション ファイルに変換する web アプリケーションのリポジトリです。
 
 # Web application. Run in web bowser

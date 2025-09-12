@@ -4,7 +4,7 @@ This repository contains a web application that converts BVH files into VRM anim
 
 # Web application. Run in web bowser
 The web application is available at vr180g.com  
-vr180g.com でウェブアプリを公開しています。　　
+vr180g.com でウェブアプリを公開しています。  
 English https://vr180g.com/bvh2vrma-7lang?l=en  
 Русский https://vr180g.com/bvh2vrma-7lang?l=ru  
 Español https://vr180g.com/bvh2vrma-7lang?l=es  

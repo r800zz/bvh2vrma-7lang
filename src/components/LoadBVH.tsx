@@ -11,6 +11,14 @@ interface FileBlob {
 }
 interface LoadBVHProps {
   setBlobURL: Dispatch<SetStateAction<string | null>>;
+  dragAndDropText: string;
+  selectFileText: string;
+  vrmconvertingText: string;
+  convertcompleteText: string;
+  filedownloadText: string;
+  convertotherfileText: string;
+  converterrorText: string;
+  uploadaginText: string;
 }
 const LoadBVH = (props: LoadBVHProps) => {
   const [error, setError] = useState('');
@@ -104,22 +112,22 @@ const LoadBVH = (props: LoadBVHProps) => {
           <div className="pb-16">
             <LoadingSpinner size={48} padding={16} transparent={false} />
           </div>
-          <div className="font-bold text-text3">VRMAファイルに変換中...</div>
+          <div className="font-bold text-text3">{props.vrmconvertingText}</div>
         </div>
       ) : completed ? (
         <div>
           <div className="flex justify-center pb-16">
             <pixiv-icon class="text-text4" name="24/Check" scale="2"></pixiv-icon>
           </div>
-          <div className="text-center font-bold text-text3 pb-24">変換が完了しました</div>
+          <div className="text-center font-bold text-text3 pb-24">{props.convertcompleteText}</div>
           <div className="pb-8">
             <Button onClick={fileDownload} variant="Primary">
-              ファイルをダウンロード
+              {props.filedownloadText}
             </Button>
           </div>
           <div className="flex justify-center ">
             <button className="text-link1 typography-14" onClick={initializeState}>
-              他のファイルを変換
+              {props.convertotherfileText}
             </button>
           </div>
         </div>
@@ -139,12 +147,11 @@ const LoadBVH = (props: LoadBVHProps) => {
                     <div className="flex justify-center pb-16">
                       <pixiv-icon class="text-text4" name="24/File" scale="2"></pixiv-icon>
                     </div>
-                    <div className="font-bold text-text3 sm:hidden">ファイルを選択</div>
+                    <div className="font-bold text-text3 sm:hidden">{props.selectFileText}</div>
                     <div className="font-bold text-text3 max-sm:hidden">
-                      bvhファイルをドラッグ&ドロップ
-                      <br />
-                      もしくはクリックしてファイルを選択
+                      {props.dragAndDropText}
                     </div>
+
                   </div>
                 </div>
               </button>
@@ -155,13 +162,13 @@ const LoadBVH = (props: LoadBVHProps) => {
                 <pixiv-icon class="text-text4" name="24/Error" scale="2"></pixiv-icon>
               </div>
               <div className="font-bold text-text3 pb-16">
-                エラーが発生しました。
+                {props.converterrorText}
                 <br />
                 {error}
                 <br />
-                再度アップロードしてください。
+                {props.uploadaginText}
               </div>
-              <Button onClick={initializeState}>他のファイルを変換</Button>
+              <Button onClick={initializeState}>{props.convertotherfileText}</Button>
             </div>
           )}
         </>
@@ -170,3 +177,4 @@ const LoadBVH = (props: LoadBVHProps) => {
   );
 };
 export default LoadBVH;
+

@@ -1,36 +1,46 @@
 # bvh to VRMA
-
+This repository contains a web application that converts BVH files into VRM animation files.
 このリポジトリは bvh ファイルを VRMアニメーション ファイルに変換する web アプリケーションのリポジトリです。
 
-# デモ
+# Web application. Run in web bowser
+The web application is available at vr180g.com
+vr180g.com でウェブアプリを公開しています。
+English https://vr180g.com/bvh2vrma-7lang?l=en
+Русский https://vr180g.com/bvh2vrma-7lang?l=ru
+Español https://vr180g.com/bvh2vrma-7lang?l=es
+ภาษาไทย https://vr180g.com/bvh2vrma-7lang?l=th
+中文 https://vr180g.com/bvh2vrma-7lang?l=cn
+한국어 https://vr180g.com/bvh2vrma-7lang?l=kr
+日本語 https://vr180g.com/bvh2vrma-7lang?l=jp
 
-GitHub Pages でデモを公開しています。
-https://vrm-c.github.io/bvh2vrma/
+# Where is VRMA used?
+R800ZZ WebXR VRM Viewer
+https://www.youtube.com/watch?v=WSahXLS94Cs
+https://vr180g.com/viewer/viewer.php?l=en
 
-# 注意点
+# How can I generate a BVH file?
+R800ZZ Motion Capture for PICO 4 Ultra / PICO 4
+https://www.youtube.com/watch?v=JLc6bQfha5c
+https://vr180g.com/pico/motioncapture.php?l=en
 
-- 変換結果を保証するものではありません。入力された bvh ファイルによっては失敗することがあります。
-
-# 開発を行うには
-
-ローカル環境で開発を行うにはこのリポジトリをクローンしてください。
+# Develop
 
 ```
-git clone https://github.com/vrm-c/bvh2vrma
+git clone https://github.com/vrm-c/bvh2vrma-7lang
 ```
-
-必要なパッケージをインストールの上、開発用の web サーバーの起動を行ってください。
 
 ```
 yarn install && yarn dev
 ```
+Open http://localhost:3000 in your browser
 
-# VRMアニメーション
+# VRM Animation(Motion)
 
+VRM Animation is a glTF extension for describing animations targeting humanoid models defined by the VRM specification.
 VRMアニメーションは、VRMで定義された人型モデルに対するアニメーションを記述するための glTF 拡張です。
-VRMアニメーションファイルについての詳細は[Webサイト](https://vrm.dev/vrma/)をご覧ください。
-また、詳しい仕様に関しては別途[仕様書](https://github.com/vrm-c/vrm-specification/blob/master/specification/VRMC_vrm_animation-1.0/README.ja.md)をお読みいただけますと幸いです。
+Detail [Webサイト](https://vrm.dev/vrma/)
+https://github.com/vrm-c/vrm-specification/blob/master/specification/VRMC_vrm_animation-1.0/README.ja.md
 
-# ライセンス
+# License
 
-- [MIT ライセンス](./LICENSE.txt)
+- [MIT License](./LICENSE.txt)

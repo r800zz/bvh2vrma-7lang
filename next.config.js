@@ -1,21 +1,28 @@
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  output: 'export', // Export as a static site
-  basePath: '/bvh2vrma-7lang', // Match the path for GitHub Pages
-  assetPrefix: '/bvh2vrma-7lang', // Adjust paths for loading CSS and JS
+module.exports = (phase) => {
+  const isDev = phase === PHASE_DEVELOPMENT_SERVER;
 
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.vrm$/u,
-      type: 'asset',
-    })
-    return config
-  },
+  const nextConfig = {
+    reactStrictMode: true,
+    output: 'export', // Export as a static site
+    basePath: isDev ? '' : '/bvh2vrma-7lang', // Match the path for GitHub Pages only in production
+    assetPrefix: isDev ? '' : '/bvh2vrma-7lang', // Adjust paths for loading CSS and JS only in production
 
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production'
-  }
-}
+    webpack(config) {
+      config.module.rules.push({
+        test: /\.vrm$/u,
+        type: 'asset',
+      });
+      return config;
+    },
 
-module.exports = nextConfig
+    compiler: {
+      removeConsole: process.env.NODE_ENV === 'production',
+    },
+  };
+
+  return nextConfig;
+};
+

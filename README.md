@@ -57,6 +57,7 @@ Open `http://localhost:3000` in your browser
 yarn build
 yarn export
 ```
+Outputs to the "out" directory.
 
 # VRM Animation(Motion)
 

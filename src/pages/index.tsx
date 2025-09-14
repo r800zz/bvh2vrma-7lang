@@ -5,6 +5,7 @@ import LoadBVH from '../components/LoadBVH';
 import VrmViewer from '../components/VrmViewer';
 
 interface MessageType {
+  forkfrom: string;
   japaneseonly: string;
   sevenlang: string;
   original: string;
@@ -23,6 +24,7 @@ interface MessageType {
 
 const messages: Record<string, MessageType> = {
   en: {
+    forkfrom: 'forked from vrm-c/bvh2vrma',
     japaneseonly: 'Japanese only',
     sevenlang: '7 languages',
     original: 'Original project',
@@ -40,6 +42,7 @@ const messages: Record<string, MessageType> = {
     uploadagin: 'Please upload again.',
   },
   es: {
+    forkfrom: 'Fork de vrm-c/bvh2vrma',
     japaneseonly: 'Solo japonés',
     sevenlang: '7 idiomas',
     original: 'Proyecto original',
@@ -57,6 +60,7 @@ const messages: Record<string, MessageType> = {
     uploadagin: 'Por favor, sube el archivo nuevamente.',
   },
   th: {
+    forkfrom: 'Fork จาก vrm-c/bvh2vrma',
     japaneseonly: 'เฉพาะภาษาญี่ปุ่น',
     sevenlang: '7 ภาษา',
     original: 'โปรเจกต์ต้นฉบับ',
@@ -74,6 +78,7 @@ const messages: Record<string, MessageType> = {
     uploadagin: 'กรุณาอัปโหลดอีกครั้ง',
   },
   cn: {
+    forkfrom: 'Fork 自 vrm-c/bvh2vrma',
     japaneseonly: '仅限日语',
     sevenlang: '7 种语言',
     original: '原始项目',
@@ -91,6 +96,7 @@ const messages: Record<string, MessageType> = {
     uploadagin: '请重新上传。',
   },
   kr: {
+    forkfrom: 'vrm-c/bvh2vrma에서 Fork함',
     japaneseonly: '일본어만',
     sevenlang: '7개 언어',
     original: '원본 프로젝트',
@@ -108,6 +114,7 @@ const messages: Record<string, MessageType> = {
     uploadagin: '다시 업로드해 주세요.',
   },
   jp: {
+    forkfrom: 'vrm-c/bvh2vrmaからのフォーク',
     japaneseonly: '日本語のみ',
     sevenlang: '7言語',
     original: '元プロジェクト',
@@ -126,6 +133,7 @@ const messages: Record<string, MessageType> = {
 
   },
   ru: {
+    forkfrom: 'Fork от vrm-c/bvh2vrma',
     japaneseonly: 'Только японский',
     sevenlang: '7 языков',
     original: 'Оригинальный проект',
@@ -286,10 +294,10 @@ export default function Home() {
                 </div>
                 <div className="flex justify-center pt-8">
                   <a
-  href="https://github.com/vrm-c/bvh2vrma"
+  href="https://github.com/r800zz/bvh2vrma-7lang"
   target="_blank"
   rel="noopener noreferrer"
-  className="text-link1 text-center">{currentMessages.original}: vrm-c/bvh2vrma({currentMessages.japaneseonly})</a>
+  className="text-link1 text-center">github r800zz/bvh2vrma-7lang ({currentMessages.forkfrom})</a>
                 </div>
                 <div className="flex justify-center pt-8">
                   <a href={`https://vr180g.com/?l=${lang}`} className="text-link1 text-center">

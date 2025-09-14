@@ -1,8 +1,15 @@
 # bvh to VRMA - 7 languages
-Modified to support 7 languages  
+Modified to support 7 languages.(English, Russian, Spanish, Thai, Chinese, Korean, Japanese)  
 This repository contains a web application that converts BVH files into VRM animation files.  
 7言語に対応しました。  
 このリポジトリは bvh ファイルを VRMアニメーション ファイルに変換する web アプリケーションのリポジトリです。
+
+# Language Switching Instructions
+
+## Append ?l=xx to the end of the URL
+(where xx is: English = en, Russian = ru, Spanish = es, Thai = th, Chinese = cn, Korean = kr, Japanese = jp)
+
+## Click the button for your preferred language
 
 # Web application. Run in web bowser
 The web application is available at vr180g.com  
@@ -25,16 +32,29 @@ R800ZZ Motion Capture for PICO 4 Ultra / PICO 4
 https://www.youtube.com/watch?v=JLc6bQfha5c  
 https://vr180g.com/pico/motioncapture.php?l=en  
 
-# Develop
+# Development
 
+This is a Next.js project developed on Node.js..  
+The project is primarily written in TypeScript.  
+If you're unfamiliar with Next.js, some behaviors may be confusing.  
+
+## Initial setup (installing dependencies)
 ```
 git clone https://github.com/vrm-c/bvh2vrma-7lang
+yarn install
 ```
 
+## Start development server
 ```
-yarn install && yarn dev
+yarn dev
 ```
-Open http://localhost:3000 in your browser
+Open `http://localhost:3000` in your browser
+
+## Builds index.html
+```
+yarn build
+yarn export
+```
 
 # VRM Animation(Motion)
 

@@ -6,10 +6,12 @@ This repository contains a web application that converts BVH files into VRM anim
 
 # Language Switching Instructions
 
+The default language is English.  
 ## Append ?l=xx to the end of the URL
 (where xx is: English = en, Russian = ru, Spanish = es, Thai = th, Chinese = cn, Korean = kr, Japanese = jp)
 
 ## Click the button for your preferred language
+Language selection is available after the page is displayed.
 
 # Web application. Run in web bowser
 The web application is available at vr180g.com  

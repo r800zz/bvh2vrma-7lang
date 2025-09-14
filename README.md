@@ -36,9 +36,10 @@ https://vr180g.com/pico/motioncapture.php?l=en
 
 # Development
 
-This is a Next.js project developed on Node.js..  
+This is a Next.js project developed on Node.js.  
 The project is primarily written in TypeScript.  
 If you're unfamiliar with Next.js, some behaviors may be confusing.  
+It is recommended to use "yarn dev" during development and run "yarn export" only at the very end.  
 
 ## Initial setup (installing dependencies)
 ```

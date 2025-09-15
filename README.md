@@ -28,7 +28,8 @@ Español https://vr180g.com/bvh2vrma-7lang?l=es
 R800ZZ WebXR VRM Viewer
 https://www.youtube.com/watch?v=WSahXLS94Cs  
 https://vr180g.com/viewer/viewer.php?l=en  
-R800ZZ WebXR VRM Viewer can load VRMA files. However, since it can also read BVH files directly, there's no need to convert them to VRMA.
+R800ZZ WebXR VRM Viewer can load VRMA files.  
+However, since it can also read BVH files directly, there's no need to convert them to VRMA.
 
 # How can I generate a BVH file?
 R800ZZ Motion Capture for PICO 4 Ultra / PICO 4  
